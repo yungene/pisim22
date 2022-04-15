@@ -1,0 +1,7 @@
+A(a,b,c,d) = a(x).C(a,b,c,d)
+B(a,b,c,d) = b(x).A(a,b,c,d)
+C(a,b,c,d) = c(x).E(a,b,c,d)
+D(a,b,c,d) = d'<d>.A(a,b,c,d)
+E(a,b,c,d) = b(x).D(a,b,c,d) + d'<d>.B(a,b,c,d)
+S = $c000.$c001.$c002.$c003.$c004.$c005.(A(a000,b000,c000,c005)| D(a001,b001,c001,c000)| D(a002,b002,c002,c001)| D(a003,b003,c003,c002)| D(a004,b004,c004,c003)| D(a005,b005,c005,c004))
+S

@@ -1,0 +1,3 @@
+B = b(x).B
+S = a(x).B + a(x).b(x).B
+S

@@ -1,0 +1,5 @@
+Buff0(i,o) =i(y).Buff1(i,o,y)
+Buff1(i,o,x0) =i(y).Buff2(i,o,x0,y)+o'<x0>.Buff0(i,o)
+Buff2(i,o,x0,x1) =i(y).Buff3(i,o,x0,x1,y)+o'<x0>.Buff1(i,o,x1)
+Buff3(i,o,x0,x1,x2) =o'<x0>.Buff2(i,o,x1,x2)
+Buff0(in,out)

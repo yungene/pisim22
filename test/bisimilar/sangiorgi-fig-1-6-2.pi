@@ -1,0 +1,6 @@
+N1 = a(x).N2 + a(x).N3
+N2 = a(x).N4 + b(x).N1
+N3 = a(x).N5 + b(x).N1
+N4 = b(x).N3
+N5 = b(x).N2
+N1

@@ -1,0 +1,47 @@
+# Dev env
+.vscode/*
+
+# Tests
+test/*.pdf
+test/*.dot
+test/*.gob
+*.pdf
+*.dot
+*.gob
+
+# Executable
+pisim
+pisim22
+*.exe
+
+# GraphViz
+dot/*.pdf
+
+# LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glg-abr
+*.glo
+*.glo-abr
+*.gls
+*.gls-abr
+*.ist
+*.lof
+*.log
+*.lol
+*.lot
+*.out
+*.run.xml
+*.slg
+*.slo
+*.sls
+*.toc
+*.xdv
+*.xdy
+_minted-*/
+auto/

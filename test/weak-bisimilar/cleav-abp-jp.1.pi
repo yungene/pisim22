@@ -1,0 +1,2 @@
+Spec(s,r) = s(v).r'<v>.Spec(s,r)
+Spec(send, receive)

@@ -1,0 +1,27 @@
+H1(gh, ph) = gh(x).H2(gh, ph)
+H2(gh, ph) = ph(x).H1(gh, ph)
+M1(gm, pm) = gm(x).M2(gm, pm)
+M2(gm, pm) = pm(x).M1(gm, pm)
+J0(gh, ph, gm, pm) = ie(x).JE(gh, ph, gm, pm, x) + in(x).JN(gh, ph, gm, pm, x) + id(x).JD(gh, ph, gm, pm, x)
+JE(gh, ph, gm, pm, x) = out'<x>.J0(gh, ph, gm, pm)
+JN(gh, ph, gm, pm, x) = gh'<x>.ph'<x>.JE(gh, ph, gm, pm, x) + gm'<x>.pm'<x>.JE(gh, ph, gm, pm, x)
+JD(gh, ph, gm, pm, x) = gh'<x>.ph'<x>.JE(gh, ph, gm, pm, x)
+Jobshop = $gh.$ph.$gm.$pm.(J0(gh, ph, gm, pm) | J0(gh, ph, gm, pm) | H1(gh, ph) | M1(gm, pm))
+Jobshop
+
+H1(gh, ph) = gh(x).H2(gh, ph)
+H2(gh, ph) = ph(x).H1(gh, ph)
+M1(gm, pm) = gm(x).M2(gm, pm)
+M2(gm, pm) = pm(x).M1(gm, pm)
+J0(gh, ph, gm, pm) = ie(x).JE(gh, ph, gm, pm) + in(x).JN(gh, ph, gm, pm) + id(x).JD(gh, ph, gm, pm)
+JE(gh, ph, gm, pm) = out'<x>.J0(gh, ph, gm, pm)
+JN(gh, ph, gm, pm) = gh'<x>.ph'<x>.JE(gh, ph, gm, pm) + gm'<x>.pm'<x>.JE(gh, ph, gm, pm)
+JD(gh, ph, gm, pm) = gh'<x>.ph'<x>.JE(gh, ph, gm, pm)
+Jobshop = $gh.$ph.$gm.$pm.(J0(gh, ph, gm, pm) | J0(gh, ph, gm, pm) | H1(gh, ph) | M1(gm, pm))
+Jobshop
+
+
+A0 = ie(x).A1 + in(x).A1 + id(x).A1
+A1 = out'<x>.A0
+AGENCY = A0 | A0
+AGENCY

@@ -1,0 +1,2 @@
+Bag(c) = c(x).(c'<x>.0 | Bag(c))
+Bag(channel)

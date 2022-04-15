@@ -1,0 +1,12 @@
+Q01 = a(x).Q11 + a(x).Q1
+Q1 = a(x).Q2 + a(x).Q3
+Q2 = b(x).Q4
+Q3 = b(x).Q5
+Q4 = a(x).Q1
+Q5 = a(x).Q1
+Q11 = a(x).Q12 + a(x).Q13
+Q12 = b(x).Q14
+Q13 = b(x).Q15
+Q14 = a(x).Q14
+Q15 = a(x).Q11
+Q01

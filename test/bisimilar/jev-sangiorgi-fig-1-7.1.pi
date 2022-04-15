@@ -1,0 +1,12 @@
+P01 = a(x).P1 + a(x).P11
+P1 = a(x).P2 + a(x).P3
+P2 = b(x).P4
+P3 = b(x).P5
+P4 = a(x).P1
+P5 = a(x).P1
+P11 = a(x).P12 + a(x).P13
+P12 = b(x).P14
+P13 = b(x).P15
+P14 = a(x).P14
+P15 = a(x).P11
+P01

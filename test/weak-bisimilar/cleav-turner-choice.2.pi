@@ -1,0 +1,11 @@
+Man(s,r,false,true) = s(x).Repeat(s,r,x,false,true)
+
+Repeat(s,r,v,false,true) = r(w).w(lock).w(res).lock(x).(([x=true]res'<v>.Man(s,r,false,true)) | ([x=false]Repeat(s,r,v,false,true)))
+
+Lock(l,false,true) = l'<true>.l'<false>.0
+
+P(p,pp,y,z) =  $tt.$ff.$as.$ar.$bs.$br.($lock.(Lock(lock,ff,tt) | ($a.$ok.(ar'<a>.a'<lock>.a'<ok>.ok(x).z'<x>.0 | ($a.$ok.br'<a>.a'<lock>.a'<ok>.ok(x).y'<x>.0)))) |  Man(as,ar,ff,tt) | Man(bs,br,ff,tt) | as'<p>.0)
+
+Q(p,pp,y,z) = $a.$b.(a'<p>.0 | (a(x).z'<x>.0 + b(x).y'<x>.0))
+
+Q(v1,v2,v3,v4)

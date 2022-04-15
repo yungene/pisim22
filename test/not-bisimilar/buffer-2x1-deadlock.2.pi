@@ -1,0 +1,4 @@
+Buff20(in, out) = in(x).Buff21(in, out, x)
+Buff21(in, out, x) = in(y).Buff22(in, out, x, y) + out'<x>.Buff20(in, out)
+Buff22(in, out, x, y) = out'<x>.Buff21(in, out, y) + [in=out]0
+x(in).x(out).Buff20(in, out)

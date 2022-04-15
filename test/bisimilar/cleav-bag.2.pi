@@ -1,0 +1,2 @@
+Buf(c) = c(x).c'<x>.Buf(c)
+Buf(channel)

@@ -1,0 +1,7 @@
+T(l) = l(w).w(tt).w(ff). $i.tt'<i>. T(l)
+F(l) = l(w).w(tt).w(ff). $i.ff'<i>. F(l)
+
+Not(l0,l) = l(w).w(tt).w(ff).$t0.$f0.$w.l0'<w>.w'<t0>.w'<f0>.(t0(i).$i.ff'<i>.F(l) + f0(i).$i.tt'<i>.T(l))
+
+
+F(nlink)

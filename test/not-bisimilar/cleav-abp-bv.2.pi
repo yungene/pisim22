@@ -1,0 +1,11 @@
+Sender(s,ss1,ss2,rr1,rr2,b,nb) = s(v).Transmit(s,ss1,ss2,rr1,rr2,b,nb,v) 
+Transmit(s,ss1,ss2,rr1,rr2,b,nb,v) = ss1'<v>.ss2'<b>. Await(s,ss1,ss2,rr1,rr2,b,nb,v)
+
+Await(s,ss1,ss2,rr1,rr2,b,nb,v) = Transmit(s,ss1,ss2,rr1,rr2,b,nb,v) 	+ rr1(bb).rr2(x).(  ([b=bb](Sender(s,ss1,ss2,rr1,rr2,nb,b))) + ([nb=bb](Transmit(s,ss1,ss2,rr1,rr2,b,nb,v))))
+
+Receiver(r,ss1,ss2,rr1,rr2,b,nb) = rr1(v).rr2(bb).(  ([bb=b](r'<v>.ss1'<b>.ss2'<b>.Receiver(r,rs,rr1,rr2,nb,b))) + ([bb=nb](ss1'<nb>.ss2'<nb>.Receiver(r,rs,rr1,rr2,b,nb))) )
+
+Mlossy(ss1,ss2,rr1,rr2) = 	ss1(vx).ss2(bx).( Mlossy(ss1,ss2,rr1,rr2)  + rr1'<vx>.rr2'<bx>.Mlossy(ss1,ss2,rr1,rr2) )
+
+ABP(s,r) = 	$b.$nb.$ss1.$ss2.$sr.$rs.$rr1.$rr2.( Sender(s,ss1,ss2,rr1,rr2,b,nb) | Mlossy(ss1,ss2,rr1,rr2) |Receiver(r,ss1,ss2,rr1,rr2,b,nb))
+ABP(send, receive)

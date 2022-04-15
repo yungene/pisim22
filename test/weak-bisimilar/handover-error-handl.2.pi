@@ -1,0 +1,6 @@
+Spec(y)= (in(v).S1(y,v) + y(y).Spec(y))
+S1(y,v1)= (in(v).S2(y,v1,v) + out'<v1>.Spec(y) + y(y).out'<v1>.Spec(y)) 
+S2(y,v1,v2)= (in(v).S3(y,v1,v2,v) + out'<v1>.S1(y,v2) + y(y).out'<v1>.out'<v2>.Spec(y)) 
+S3(y,v1,v2,v3)= out'<v1>.S2(y,v2,v3)
+P(y) = y'<y>.P(y)
+$y.(Spec(y) | P(y))

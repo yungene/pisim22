@@ -1,0 +1,3 @@
+Buff1(in, out) = in(x).out'<x>.Buff1(in, out)
+Buff2(in, out) = $m.(Buff1(in, m) | Buff1(m, out))
+Buff2(in, out)

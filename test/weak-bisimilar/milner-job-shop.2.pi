@@ -1,0 +1,10 @@
+H1(gh, ph) = gh(x).H2(gh, ph)
+H2(gh, ph) = ph(x).H1(gh, ph)
+M1(gm, pm) = gm(x).M2(gm, pm)
+M2(gm, pm) = pm(x).M1(gm, pm)
+J0(gh, ph, gm, pm) = ie(x).JE(gh, ph, gm, pm, x) + in(x).JN(gh, ph, gm, pm, x) + id(x).JD(gh, ph, gm, pm, x)
+JE(gh, ph, gm, pm, x) = out'<x>.J0(gh, ph, gm, pm)
+JN(gh, ph, gm, pm, x) = gh'<x>.ph'<x>.JE(gh, ph, gm, pm, x) + gm'<x>.pm'<x>.JE(gh, ph, gm, pm, x)
+JD(gh, ph, gm, pm, x) = gh'<x>.ph'<x>.JE(gh, ph, gm, pm, x)
+Jobshop = $gh.$ph.$gm.$pm.(J0(gh, ph, gm, pm) | J0(gh, ph, gm, pm) | H1(gh, ph) | M1(gm, pm))
+Jobshop

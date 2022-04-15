@@ -1,0 +1,4 @@
+P0 = a(x).P1 + a(x).P2
+P1 = a(x).P2 + b(x).P0
+P2 = a(x).P2 + b(x).P0
+P0

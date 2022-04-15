@@ -1,0 +1,4 @@
+Q = a(y).0
+P(d,x) = d(x).0 | d'<x>.a(y).0
+R(d,x) = P(d,x) + Q
+$d.$x.R(d,x)

@@ -1,0 +1,4 @@
+A0 = ie(x).A1(x) + in(x).A1(x) + id(x).A1(x)
+A1(x) = out'<x>.A0
+AGENCY = A0 | A0
+AGENCY

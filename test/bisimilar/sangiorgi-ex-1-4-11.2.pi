@@ -1,0 +1,6 @@
+Q1 = a(x).Q4 + a(x).Q3
+Q2 = b(x).Q3
+Q3 = c(x).Q1 + c(x).Q4
+Q4 = b(x).Q5
+Q5 = c(x).Q1 + c(x).Q2
+Q1
