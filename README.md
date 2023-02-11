@@ -6,6 +6,8 @@ It uses [Fresh-Register Automata](http://www.cs.ox.ac.uk/people/nikos.tzevelekos
 
 This work was carried out as part of a master's dissertation with [Dr. Vasileios Koutavas](https://www.scss.tcd.ie/Vasileios.Koutavas/) at Trinity College Dublin in 2021/2022.
 
+Report: "*An Algorithm and Implementation of Equivalence Checking in Pi-Calculus through Fresh-Register Automata*" available at [TCD](https://www.scss.tcd.ie/publications/theses/diss/2022/TCD-SCSS-DISSERTATION-2022-006.pdf) or [Github](https://github.com/yungene/pisim22-dissertation-report).
+
 ## How to use
 
 The tool supports checking two systems specified in pi-calculus for bisimulation. The mainline is in `pisim22.go`. See it for some _currently_ hardcoded limits. The "old" mainline that took gob files as inputs is in `frasim.go`.
